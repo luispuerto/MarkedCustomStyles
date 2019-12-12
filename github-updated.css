@@ -379,6 +379,15 @@ li p + p {
   margin-top: 16px;
 }
 
+.task-list {
+  list-style-type: none !important;
+  padding-inline-start: 0;
+}
+
+input[type='checkbox'] {
+  margin: 0 .2em .25em 0 !important;
+}
+
 dl {
   padding: 0;
 }
