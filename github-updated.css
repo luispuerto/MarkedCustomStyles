@@ -546,6 +546,7 @@ code br, tt br {
 del code {
   text-decoration: inherit;
   vertical-align: text-top;
+
 }
 
 pre > code {
@@ -934,4 +935,27 @@ sub {
 body.dark #wrapper {
   background: transparent !important;
   box-shadow: none !important;
+}
+
+
+/* ---- Critic Markup ---- */
+
+span.critic.comment {
+  font-style: italic;
+  color: #8DA2BC;
+  font-size: .9em;
+}
+span.critic.comment::before {
+  content: "{>>";
+}
+
+span.critic.comment::after {
+  content: "<<}";
+}
+
+del {
+  background: #fae6e6;
+}
+ins {
+  background: #ecfce6;
 }
